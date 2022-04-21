@@ -17,9 +17,9 @@ export class GettingStarted extends React.Component {
                 <Container className="d-flex ps-3 ">
 
                     <Dropdown className="text-warning ">Getting Started <FontAwesomeIcon className="ms-0 me-3 ps-5" icon={faCaretDown}></FontAwesomeIcon>
-                        <Dropdown.Item className="fw-bold " onClick={Shadow}>Developer</Dropdown.Item>
-                        <Dropdown.Item className="fw-bold" onClick={Shadows}>Release</Dropdown.Item>
-                        <Dropdown.Item className="fw-bold" onClick={Shadowa}>User Guide</Dropdown.Item>
+                        <Dropdown.Item className="fw-bold " onMouseEnter={Shadow} onMouseLeave={ShadowOff}>Developer</Dropdown.Item>
+                        <Dropdown.Item className="fw-bold" onMouseEnter={Shadows} onMouseLeave={ShadowsOff}>Release</Dropdown.Item>
+                        <Dropdown.Item className="fw-bold" onMouseEnter={Shadowa} onMouseLeave={ShadowaOff}>User Guide</Dropdown.Item>
 
                         <Dropdown.Item className="ps-1 " href="#action/3.4">Separated link <FontAwesomeIcon className="ms-1 ps-5 " icon={faCaretDown}></FontAwesomeIcon></Dropdown.Item>
                     </Dropdown>
@@ -76,14 +76,25 @@ export class GettingStarted extends React.Component {
 }
 
 function Shadow() {
-    document.querySelector('.cardOne').className = 'shadow me-4';
-    
+    document.querySelector('.cardOne').className = 'shadow me-4 cardOne';  
 }
+function ShadowOff() {
+    document.querySelector('.cardOne').className = 'me-4 cardOne';  
+}
+
 function Shadows() {
-    document.querySelector('.cardTwo').className = 'shadow me-4';
-    
+    document.querySelector('.cardTwo').className = 'shadow me-4 cardTwo';  
 }
+
+function ShadowsOff() {
+    document.querySelector('.cardTwo').className = 'me-4 cardTwo';  
+}
+
 function Shadowa() {
-    document.querySelector('.cardThree').className = 'shadow me-4';
+    document.querySelector('.cardThree').className = 'shadow me-4 cardThree';  
+}
+
+function ShadowaOff() {
+    document.querySelector('.cardThree').className = 'me-4 cardThree';
     
 }
