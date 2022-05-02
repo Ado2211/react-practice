@@ -2,7 +2,7 @@ import React from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { hover } from "@testing-library/user-event/dist/hover";
+
 
 export class MainMenu extends React.Component {
     render() {

@@ -26,10 +26,9 @@ export class GettingStarted extends React.Component {
                     <Container >
                         <h1>Getting Started</h1>
                         <Container className="d-flex mt-4 ">
-                            <Card className="me-4 cardOne">
+                            <Card className="me-4 cardOne ">
                                 <Card.Body className="pb-0 mb-0 ">
-
-                                    < Col className="d-inline-flex ">
+                                    <Col className="d-inline-flex ">
                                         <img className="h-100 me-3" alt="smile" src={developer} />
                                         <Col >
                                             <h5 className="mb-0 mt-">Developer</h5>
